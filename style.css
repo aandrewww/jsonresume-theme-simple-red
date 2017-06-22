@@ -255,7 +255,7 @@ a {
   float: left;
   padding-right: 10%;
 }
-#references .item:last-child {
+#references .item:nth-child(2n) {
   padding: 0;
 }
 #references .reference {
