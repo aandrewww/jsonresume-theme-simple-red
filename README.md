@@ -5,8 +5,7 @@ Simple red theme for JSONResume. See it live.
 
 ![](./screenshots/screenshot-1.jpg)
 
-
-> [Online demo](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html)
+| ![](./screenshots/screenshot-2.png) | ![](./screenshots/screenshot-3.png) | ![](./screenshots/screenshot-4.png) |
 
 ## Getting started
 
