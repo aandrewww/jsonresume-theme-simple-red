@@ -1,0 +1,35 @@
+{{#if resume.awards.length}}
+<section id="awards">
+	<h3>Awards</h3>
+  <section>
+    {{#each resume.awards}}
+    <div class="item">
+      <div class="row">
+        {{#if title}}
+        <div class="title">
+          {{title}}
+        </div>
+        {{/if}}
+        <div class="date">
+          {{#if date}}
+          <span>
+            {{formatDate date}}
+          </span>
+          {{/if}}
+        </div>
+      </div>
+      {{#if awarder}}
+      <div class="awarder">
+        {{awarder}}
+      </div>
+      {{/if}}
+      {{#if summary}}
+      <div class="summary">
+        <p>{{summary}}</p>
+      </div>
+      {{/if}}
+    </div>
+    {{/each}}
+  </section>
+</section>
+{{/if}}

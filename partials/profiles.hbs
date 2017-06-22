@@ -1,0 +1,27 @@
+{{#if resume.basics.profiles.length}}
+<section id="profiles">
+	<h3>Profiles</h3>
+  <section>
+    {{#each resume.basics.profiles}}
+    <div class="item">
+      {{#if network}}
+      <div class="network">
+        {{network}}
+      </div>
+      {{/if}}
+      {{#if url}}
+      <div class="url">
+        <a href="{{url}}">{{username}}</a>
+      </div>
+      {{else}}
+        {{#if username}}
+        <div class="url">
+          {{username}}
+        </div>
+        {{/if}}
+      {{/if}}
+    </div>
+    {{/each}}
+  </section>
+</section>
+{{/if}}

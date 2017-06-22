@@ -1,0 +1,15 @@
+{
+  "name": "jsonresume-theme-simple-red",
+  "version": "0.0.1",
+  "description": "Simple red theme for JSON Resume",
+  "author": "Andrew Avdeev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erming/jsonresume-theme-simple-red"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4",
+    "moment": "^2.18.1"
+  }
+}

@@ -1,0 +1,31 @@
+{{#resume.basics}}
+<section id="contacts">
+  {{#location}}
+  <div class="location item">
+    <div class="block">
+      {{#if address}}<span class="countryCode">{{countryCode}}</span>{{/if}}
+      {{#if city}}<span class="city">{{city}}</span>{{/if}}
+      {{#if region}}<span class="region">{{region}}</span>{{/if}}
+    </div>
+    <div class="block">
+      {{#if address}}<span class="address">{{address}}</span>{{/if}}
+    </div>
+  </div>
+  {{/location}}
+
+  <div class="contacts item">
+    <div class="block">
+      {{#if email}}<span class="email">{{email}}</span>{{/if}}
+    </div>
+    <div class="block">
+      {{#if phone}}<span class="phone">{{phone}}</span>{{/if}}
+    </div>
+  </div>
+
+  <div class="site item">
+    <div class="block">
+      {{#if website}}<a href="{{website}}" class="website">{{httpReplacer website}}</a>{{/if}}
+    </div>
+  </div>
+</section>
+{{/resume.basics}}
