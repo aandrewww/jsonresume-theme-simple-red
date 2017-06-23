@@ -1,13 +1,32 @@
 {
   "name": "jsonresume-theme-simple-red",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple red theme for JSON Resume",
-  "author": "Andrew Avdeev",
+  "author": "Andrew Avdeev <andrewww.avdeev@gmail.com> (https://github.com/aandrewww)",
+  "license": "MIT",
+  "homepage": "https://github.com/aandrewww/jsonresume-theme-simple-red",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aandrewww/jsonresume-theme-simple-red"
+    "url": "https://github.com/aandrewww/jsonresume-theme-simple-red.git"
   },
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aandrewww/jsonresume-theme-simple-red/issues"
+  },
+  "keywords": [
+    "jsonresume",
+    "jsonresume-theme",
+    "jsonresume-theme-simple-red",
+    "theme",
+    "simple-red",
+    "resume",
+    "cv",
+    "curriculum vitae",
+    "curriculum",
+    "portfolio",
+    "json resume",
+    "jsonresume theme",
+    "theme"
+  ],
   "dependencies": {
     "handlebars": "^2.0.0-alpha.4",
     "moment": "^2.18.1"
