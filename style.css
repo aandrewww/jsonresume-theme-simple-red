@@ -269,7 +269,7 @@ a {
   font-size: 0.8em;
 }
 /* Smartphones (portrait) ----------- */
-@media (max-width: 599px) {
+@media (max-width: 599px) and (not print) {
   body {
     margin: 30px 0 40px;
   }
@@ -304,4 +304,59 @@ a {
   #languages .item, #profiles .item {
     width: 50%;
   }
+}
+
+
+
+@media print {
+  body {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  #resume {
+      width: 85%;
+      margin: 1cm auto;
+      padding: 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      line-height: 1.3;
+      font-family: Arial, Georgia, "Lucida Grande", sans-serif;
+  }
+  .summary {
+    margin: 0.2cm 0 0.9cm 0;
+  }
+  #profiles {
+    display: none;
+  }
+  #resume > section {
+    margin: 0;
+  }
+  section > section {
+    margin: 0;
+  }
+  #skills .level {
+    line-height: 1.5em;
+  }
+  #skills .name {
+    float: left;
+    margin-right: 0.5cm;
+  }
+  #skills .keywords {
+    margin-top: 0.1cm;
+  }
+  section#interests {
+    margin-top: 1cm;
+    margin-bottom: 1.2cm;
+  }
+  #contacts {
+    width: 75%;
+    float: right;
+  }
+  p {
+    opacity: 1;
+  }
+}
+
+@page {
+  margin: 1cm 1.4cm;
 }

@@ -1,6 +1,8 @@
 # jsonresume-theme-simple-red
 Simple red theme for JSONResume. [See it live.](https://andrewavdeev.com/resume.html)
 
+Support printable version.
+
 ## Screenshots (Desktop version)
 
 ![](./screenshots/screenshot-1.jpg)
