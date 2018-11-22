@@ -28,7 +28,7 @@
     "theme"
   ],
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4",
+    "handlebars": "^4.0.12",
     "moment": "^2.18.1"
   }
 }
