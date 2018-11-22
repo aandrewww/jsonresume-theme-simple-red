@@ -7,7 +7,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
 
-	<title>Richard Hendriks</title>
+	<title>Andrew Avdeev</title>
 
 	<style>
 	body {
@@ -158,22 +158,23 @@ a {
   margin: 0 5px;
   content: "/";
 }
-#work .website,
+#work .url,
 #work .position,
 #work .highlights,
 #work .item > h5,
-#volunteer .website,
+#volunteer .url,
 #volunteer .position,
 #volunteer .highlights,
 #volunteer .item > h5,
 #awards .awarder,
-#publications .website,
+#publications .url,
 #publications .publisher,
 #skills .item .level,
 #languages .item .fluency {
   font-size: 0.9em;
 }
 #work .summary,
+#work .description,
 #awards .summary,
 #volunteer .summary,
 #publications .summary {
@@ -197,8 +198,13 @@ a {
 #work .highlights li,
 #volunteer .highlights li {
   font-size: 0.9em;
-  width: 45%;
-  margin-right: 5%;
+
+  /* one column configration */
+  width: 100%;
+
+  /* two column configration */
+  /* width: 45%; */
+  /* margin-right: 5%; */
 }
 #skills .keywords {
   margin: 0;
@@ -267,7 +273,7 @@ a {
   float: left;
   padding-right: 10%;
 }
-#references .item:last-child {
+#references .item:nth-child(2n) {
   padding: 0;
 }
 #references .reference {
@@ -281,7 +287,7 @@ a {
   font-size: 0.8em;
 }
 /* Smartphones (portrait) ----------- */
-@media (max-width: 599px) {
+@media (max-width: 599px) and (not print) {
   body {
     margin: 30px 0 40px;
   }
@@ -318,48 +324,96 @@ a {
   }
 }
 
+
+
+@media print {
+  body {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  #resume {
+      width: 85%;
+      margin: 1cm auto;
+      padding: 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      line-height: 1.3;
+      font-family: Arial, Georgia, "Lucida Grande", sans-serif;
+  }
+  .summary {
+    margin: 0.2cm 0 0.9cm 0;
+  }
+  #profiles {
+    display: none;
+  }
+  #resume > section {
+    margin: 0;
+  }
+  section > section {
+    margin: 0;
+  }
+  #skills .level {
+    line-height: 1.5em;
+  }
+  #skills .name {
+    float: left;
+    margin-right: 0.5cm;
+  }
+  #skills .keywords {
+    margin-top: 0.1cm;
+  }
+  section#interests {
+    margin-top: 1cm;
+    margin-bottom: 1.2cm;
+  }
+  #contacts {
+    width: 75%;
+    float: right;
+  }
+  p {
+    opacity: 1;
+  }
+}
+
+@page {
+  margin: 1cm 1.4cm;
+}
+
 	</style>
 
 	</head>
 	<body>
 
 	<div id="resume">
-			<h1>Richard Hendriks</h1>
-			<h2>Programmer</h2>
+			<h1>Andrew Avdeev</h1>
+			<h2>Full stack web developer</h2>
 		  <div class="summary">
-		    <p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
+		    <p>I&#x27;m a full stack web developer and software architect with experience in team management. I Have 7 years of back-end and front-end development experience.</p>
 		  </div>
     <section id="education">
     	<h3>Education</h3>
     	<section class="item">
         <div class="row">
           <div class="institution">
-            University of Oklahoma
+            Belarusian State University of Informatics and Radio electronics
           </div>
           <div class="date">
             <span class="startDate">
-              June 2011
+              September 2011
             </span>
             <span class="endDate">
-              - January 2014
+              - September 2016
             </span>
           </div>
         </div>
         <div class="row education-sub-info">
           <span class="area">
-            Information Technology
+            Information technologies engineer
           </span>
           <span class="studyType">
             Bachelor
           </span>
-          <span class="gpa">
-            GPA: 4.0
-          </span>
         </div>
-    		<ul class="courses">
-    			<li>DB1101 - Basic SQL</li>
-    			<li>CS2011 - Java Introduction</li>
-    		</ul>
     	</section>
     </section>
 		<section id="work">
@@ -368,114 +422,197 @@ a {
 		    <div class="item">
 		      <div class="row">
 		        <div class="name">
-		          Pied Piper
+		          Scorum
 		        </div>
 		        <div class="date">
 		          <span class="startDate">
-		            December 2013
+		            July 2017
 		          </span>
 		          <span class="endDate">
-		            - December 2014
+		            - Present
 		          </span>
 		        </div>
 		      </div>
-		      <div class="website">
-		        <a href="https://piedpiper.com">https://piedpiper.com</a>
+		      <div class="url">
+		        <a href="https://scorum.com/">https://scorum.com/</a>
 		      </div>
 		      <div class="position">
-		        CEO/President
+		        Head Of Web Development
 		      </div>
 		      <div class="summary">
-		        <p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+		        <p>
+		          Scorum is a pioneering Blockchain powered media platform, that rewards content creators and curators.
+		          
+		        </p>
 		      </div>
 		      <h5>Responsibilities:</h5>
 		      <ul class="highlights">
-		        <li>Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
-		        <li>Successfully won Techcrunch Disrupt</li>
-		        <li>Optimized an algorithm that holds the current world record for Weisman Scores</li>
+		        <li>Servers support and setting (Ubuntu, Microsoft Azure, DigitalOcean, Blockchain Nodes, Terraform, Shell Scripts, Docker, Nginx, Backups, Firewals, DNS settings, Zabbix, Grafana, Alerting, ElasticSearch, Logstash, Kibana, security settings)</li>
+		        <li>Project deployment (Ansible, Jenkins, Gitlab, deployment checklists)</li>
+		        <li>Backend development (NodeJS, Koa2, Express (for React SSR), HapiJS, Twilio API, SendPulse SMTP, …)</li>
+		        <li>Frontend development (React, Redux, RxJS, Ramda, Crypto, Jest, Flow, SASS) </li>
+		        <li>Database support and maintenance (MySQL, MongoDB, Redis)</li>
+		        <li>Regular meetings</li>
+		        <li>Reports Writing</li>
+		        <li>High load optimization &amp; testing (Apache JMeter, Tsung)</li>
+		        <li>Projects estimation</li>
+		        <li>Job interviews</li>
+		        <li>Code-review</li>
+		        <li>Designing the architecture (sequence diagrams, flowcharts, C4 model for software architecture)</li>
+		        <li>Choosing the technologies for the implementation</li>
+		        <li>Support test team</li>
+		        <li>Leadership</li>
+		        <li>Managing team (more then 10 developers)</li>
 		      </ul>
 		    </div>
-		  </section>
-		</section>
-		<section id="volunteer">
-			<h3>Volunteer</h3>
-		  <section>
 		    <div class="item">
 		      <div class="row">
 		        <div class="name">
-		          CoderDojo
+		          Monterosa
 		        </div>
 		        <div class="date">
 		          <span class="startDate">
-		            January 2012
+		            September 2015
 		          </span>
 		          <span class="endDate">
-		            - January 2013
+		            - September 2017
 		          </span>
 		        </div>
 		      </div>
-		      <div class="website">
-		        <a href="https://coderdojo.com/">https://coderdojo.com/</a>
+		      <div class="url">
+		        <a href="https://www.monterosa.co/">https://www.monterosa.co/</a>
 		      </div>
 		      <div class="position">
-		        Teacher
+		        Full Stack Web Developer
 		      </div>
 		      <div class="summary">
-		        <p>Global movement of free coding clubs for young people.</p>
+		        <p>
+		          Monterosa provides technology and ideas that shape the future of fan interaction across entertainment and sport.
+		          I developed an internal product, web and mobile applications.
+		        </p>
 		      </div>
 		      <h5>Responsibilities:</h5>
 		      <ul class="highlights">
-		        <li>Awarded &#x27;Teacher of the Month&#x27;</li>
+		        <li>Work in a team consisted of 20 people (The Frontend team consisted of 8 team members)</li>
+		        <li>Backend development (NodeJS, PM2, Koa, Express, Socket.IO, Mocha, Chai, PHP5, Silex, Symfony, Doctrine ORM, Contentfull CMS, Janrain (customer identity and access management), SSO, Facebook Messenger API, Graph API)</li>
+		        <li>Frontend development (Backbone.js, Marionette.js, CoffeeScript, React, Redux, Underscore, Lodash, LESS, SASS, BEM)</li>
+		        <li>Mobile development (React Native (including complex animations) – 5 projects)</li>
+		        <li>Database support and maintenance (MySQL (large subqueries + MySQL Transactions), RedisDB (almost all commands were used))</li>
+		        <li>Project deployment (Puppet, Vagrant)</li>
+		        <li>Work with AWS services (S3, CloudFront, ELB, SNS)</li>
+		        <li>High load optimization</li>
+		        <li>Job interviews</li>
 		      </ul>
 		    </div>
-		  </section>
-		</section>
-		<section id="awards">
-			<h3>Awards</h3>
-		  <section>
-		    <div class="item">
-		      <div class="row">
-		        <div class="title">
-		          Digital Compression Pioneer Award
-		        </div>
-		        <div class="date">
-		          <span>
-		            November 2014
-		          </span>
-		        </div>
-		      </div>
-		      <div class="awarder">
-		        Techcrunch
-		      </div>
-		      <div class="summary">
-		        <p>There is no spoon.</p>
-		      </div>
-		    </div>
-		  </section>
-		</section>
-		<section id="publications">
-			<h3>Publications</h3>
-		  <section>
 		    <div class="item">
 		      <div class="row">
 		        <div class="name">
-		          Video compression for 3d media
+		          PeopleBank Australia
 		        </div>
 		        <div class="date">
-		          <span>
-		            October 2014
+		          <span class="startDate">
+		            September 2014
+		          </span>
+		          <span class="endDate">
+		            - September 2015
 		          </span>
 		        </div>
 		      </div>
-		      <div class="website">
-		        <a href="https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)">https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)</a>
+		      <div class="url">
+		        <a href="https://www.peoplebank.com.au/">https://www.peoplebank.com.au/</a>
 		      </div>
-		      <div class="publisher">
-		        Hooli
+		      <div class="position">
+		        Full Stack Web Developer
 		      </div>
 		      <div class="summary">
-		        <p>Innovative middle-out compression algorithm that changes the way we store data.</p>
+		        <p>
+		          
+		          I developed one of the biggest Australian online work platform, where businesses and independent professionals connect and collaborate. The Team consisted of 1 PM, 1 Full Stack Dev, 1 QA.
+		        </p>
 		      </div>
+		      <h5>Responsibilities:</h5>
+		      <ul class="highlights">
+		        <li>Servers support and setting (CentOS, Vagrant, Shell Scripts, Nginx)</li>
+		        <li>Project deployment (Capistrano, Git hooks, support multiple environments)</li>
+		        <li>Backend development (PHP, Yii1, Laravel, Gearman, NodeJS)</li>
+		        <li>Frontend development (VanillaJS, jQuery, jQuery modules, LESS, SASS)</li>
+		        <li>Database support and maintenance (MySQL)</li>
+		        <li>Regular meetings with manager from Australia</li>
+		        <li>Reports Writing</li>
+		        <li>High load optimization &amp; testing (Apache Bench)</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="row">
+		        <div class="name">
+		          Stone Labs Ltd
+		        </div>
+		        <div class="date">
+		          <span class="startDate">
+		            September 2013
+		          </span>
+		          <span class="endDate">
+		            - September 2014
+		          </span>
+		        </div>
+		      </div>
+		      <div class="url">
+		        <a href="http://stone-labs.com/">http://stone-labs.com/</a>
+		      </div>
+		      <div class="position">
+		        Full Stack Web Developer
+		      </div>
+		      <div class="summary">
+		        <p>
+		          Stone Labs is using best practices in Data Driven Approach in order to set maximum efficiency of every business process.
+		          
+		        </p>
+		      </div>
+		      <h5>Responsibilities:</h5>
+		      <ul class="highlights">
+		        <li>Backend development (PHP, Yii1, Silex, NodeJS, Express)</li>
+		        <li>Frontend development (VanillaJS, jQuery, jQuery modules, LESS, SASS)</li>
+		        <li>Database support and maintenance (MySQL, MongoDB)</li>
+		        <li>Projects estimation (at the sale stage)</li>
+		        <li>Regular meetings</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="row">
+		        <div class="name">
+		          Arsenal Belarus community
+		        </div>
+		        <div class="date">
+		          <span class="startDate">
+		            January 2011
+		          </span>
+		          <span class="endDate">
+		            - September 2014
+		          </span>
+		        </div>
+		      </div>
+		      <div class="url">
+		        <a href="http://fc-arsenal.by/">http://fc-arsenal.by/</a>
+		      </div>
+		      <div class="position">
+		        Founder and lead developer of the official Belarusian Arsenal fan community.
+		      </div>
+		      <div class="summary">
+		        <p>
+		          Arsenal is official Belarusian fan-site of one of the greatest UK football teams.
+		          It was developed to read news, watch games, see statistics and make bets, discuss the games and players etc.
+		        </p>
+		      </div>
+		      <h5>Responsibilities:</h5>
+		      <ul class="highlights">
+		        <li>Design and prototyping (Photoshop)</li>
+		        <li>SEO support</li>
+		        <li>Frontend development (HTML4, CSS2-3, VanillaJS, jQuery)</li>
+		        <li>Backend development (PHP)</li>
+		        <li>Database support and maintenance (MySQL)</li>
+		        <li>Content handling (DLE CMS)</li>
+		        <li>Server support and setting (CentOS, Apache)</li>
+		      </ul>
 		    </div>
 		  </section>
 		</section>
@@ -484,28 +621,132 @@ a {
 		  <section>
 		    <div class="item">
 		      <div class="name">
-		        Web Development
+		        Frontend Development
 		      </div>
 		      <div class="level">
-		        <em>Master</em>
+		        <em>Advanced/Expert</em>
 		      </div>
 		      <ul class="keywords">
 		        <li>HTML</li>
 		        <li>CSS</li>
+		        <li>XML</li>
 		        <li>Javascript</li>
+		        <li>Bootstrap</li>
+		        <li>Less</li>
+		        <li>SASS</li>
+		        <li>Backbone</li>
+		        <li>Jquery</li>
+		        <li>Marionette</li>
+		        <li>Underscore/Lodash</li>
+		        <li>Ramda</li>
+		        <li>ES6</li>
+		        <li>React</li>
+		        <li>Redux</li>
+		        <li>RxJS</li>
+		        <li>Mobx</li>
 		      </ul>
 		    </div>
 		    <div class="item">
 		      <div class="name">
-		        Compression
+		        Backend Development
 		      </div>
 		      <div class="level">
-		        <em>Master</em>
+		        <em>Advanced/Expert</em>
 		      </div>
 		      <ul class="keywords">
-		        <li>Mpeg</li>
-		        <li>MP4</li>
-		        <li>GIF</li>
+		        <li>Node.js</li>
+		        <li>PHP</li>
+		        <li>Go</li>
+		        <li>MongoDB</li>
+		        <li>MySQL</li>
+		        <li>Redis</li>
+		        <li>PostgreSQL</li>
+		        <li>Yii</li>
+		        <li>Laravel</li>
+		        <li>Silex</li>
+		        <li>Express</li>
+		        <li>Koa</li>
+		        <li>Hapi.js</li>
+		        <li>Meteor</li>
+		        <li>Gearman</li>
+		        <li>SocketIO</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="name">
+		        Mobile development
+		      </div>
+		      <div class="level">
+		        <em>Advanced</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>Cordova/PhoneGap</li>
+		        <li>Ionic</li>
+		        <li>React Native</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="name">
+		        Desktop development
+		      </div>
+		      <div class="level">
+		        <em>Intermediate</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>Electron</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="name">
+		        DevOps
+		      </div>
+		      <div class="level">
+		        <em>Intermediate</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>Ubuntu</li>
+		        <li>CentOS</li>
+		        <li>Docker</li>
+		        <li>Vagrant</li>
+		        <li>Ansible</li>
+		        <li>Shell</li>
+		        <li>Capistrano</li>
+		        <li>Nginx</li>
+		        <li>Apache</li>
+		        <li>GitLab</li>
+		        <li>Jenkins</li>
+		        <li>Elasticsearch</li>
+		        <li>Logstash</li>
+		        <li>Kibana</li>
+		        <li>Zabbix</li>
+		        <li>Grafana</li>
+		        <li>Terraform</li>
+		        <li>Amazon web services</li>
+		        <li>Microsoft Azure</li>
+		        <li>DigitalOcean</li>
+		        <li>Blockchain Nodes</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="name">
+		        Software &amp; Tools
+		      </div>
+		      <div class="level">
+		        <em>Advanced</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>Git</li>
+		        <li>Composer</li>
+		        <li>GruntJS</li>
+		        <li>GulpJS</li>
+		        <li>Webpack</li>
+		        <li>Parcel</li>
+		        <li>Bower</li>
+		        <li>NPM</li>
+		        <li>Yarn</li>
+		        <li>Adobe Photoshop</li>
+		        <li>Adobe Illustrator</li>
+		        <li>Sketch</li>
 		      </ul>
 		    </div>
 		  </section>
@@ -515,10 +756,18 @@ a {
 		  <section>
 		    <div class="item">
 		      <div class="language">
-		        English
+		        Russian
 		      </div>
 		      <div class="fluency">
 		        <em>Native speaker</em>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="language">
+		        English
+		      </div>
+		      <div class="fluency">
+		        <em>Fluent</em>
 		      </div>
 		    </div>
 		  </section>
@@ -527,21 +776,14 @@ a {
 			<h3>Interests</h3>
 		  <section>
 		      <div class="name">
-		        Wildlife
+		        Soccer
 		      </div>
-		  </section>
-		</section>
-		<section id="references">
-			<h3>References</h3>
-		  <section>
-		    <div class="item">
-		      <blockquote class="reference">
-		        It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.
-		      </blockquote>
 		      <div class="name">
-		        — Erlich Bachman
+		        Travelling
 		      </div>
-		    </div>
+		      <div class="name">
+		        Cars
+		      </div>
 		  </section>
 		</section>
     <section id="profiles">
@@ -549,18 +791,130 @@ a {
       <section>
         <div class="item">
           <div class="network">
+            LinkedIn
+          </div>
+          <div class="url">
+            <a href="https://www.linkedin.com/in/andrewavdeev/">andrewavdeev</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Github
+          </div>
+          <div class="url">
+            <a href="https://github.com/aandrewww">aandrewww</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            NPM
+          </div>
+          <div class="url">
+            <a href="https://www.npmjs.com/~andrewww">andrewww</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Goodreads
+          </div>
+          <div class="url">
+            <a href="https://www.goodreads.com/user/show/26864332-andrew-avdeev">andrew-avdeev</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
             Twitter
           </div>
+          <div class="url">
+            <a href="https://twitter.com/AndrewwGooner">AndrewwGooner</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Facebook
+          </div>
+          <div class="url">
+            <a href="https://www.facebook.com/andrew.avdeev.3">andrew.avdeev.3</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Skype
+          </div>
             <div class="url">
-              neutralthoughts
+              andrew-gooner
             </div>
         </div>
         <div class="item">
           <div class="network">
-            SoundCloud
+            Vkontakte
           </div>
           <div class="url">
-            <a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a>
+            <a href="https://vk.com/aandreeww">aandreeww</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Instagram
+          </div>
+          <div class="url">
+            <a href="https://www.instagram.com/aandreewww/">aandreewww</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Tumblr
+          </div>
+          <div class="url">
+            <a href="http://andrewwwavdeev.tumblr.com/">andrewwwavdeev</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Flickr
+          </div>
+          <div class="url">
+            <a href="https://www.flickr.com/photos/andrewwwavdeev/">andrewwwavdeev</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            YouTube
+          </div>
+          <div class="url">
+            <a href="https://www.youtube.com/user/andrewwwavdeev">andrewwwavdeev</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            KinoPoisk
+          </div>
+          <div class="url">
+            <a href="https://www.kinopoisk.ru/user/2741742/">aandrewww</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            AngelList
+          </div>
+          <div class="url">
+            <a href="https://angel.co/andrew-avdeev-1">andrew-avdeev-1</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Stack Overflow
+          </div>
+          <div class="url">
+            <a href="http://stackoverflow.com/users/3324514/andrew-avdeev">andrew-avdeev</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            Product Hunt
+          </div>
+          <div class="url">
+            <a href="https://www.producthunt.com/@andrewww">andrewww</a>
           </div>
         </div>
       </section>
@@ -568,27 +922,27 @@ a {
 		<section id="contacts">
 		  <div class="location item">
 		    <div class="block">
-		      <span class="countryCode">US</span>
-		      <span class="city">San Francisco</span>
-		      <span class="region">California</span>
+		      <span class="countryCode">BY</span>
+		      <span class="city">Minsk</span>
+		      
 		    </div>
 		    <div class="block">
-		      <span class="address">2712 Broadway St</span>
+		      <span class="address">Matusevicha street, 68</span>
 		    </div>
 		  </div>
 		
 		  <div class="contacts item">
 		    <div class="block">
-		      <span class="email">richard.hendriks@gmail.com</span>
+		      <span class="email">andrewww.avdeev@gmail.com</span>
 		    </div>
 		    <div class="block">
-		      <span class="phone">(912) 555-4321</span>
+		      <span class="phone">+37595418679</span>
 		    </div>
 		  </div>
 		
 		  <div class="site item">
 		    <div class="block">
-		      <a href="https://richardhendricks.com" class="website">richardhendricks.com</a>
+		      <a href="https://andrewavdeev.com" class="url">andrewavdeev.com</a>
 		    </div>
 		  </div>
 		</section>

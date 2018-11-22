@@ -146,22 +146,23 @@ a {
   margin: 0 5px;
   content: "/";
 }
-#work .website,
+#work .url,
 #work .position,
 #work .highlights,
 #work .item > h5,
-#volunteer .website,
+#volunteer .url,
 #volunteer .position,
 #volunteer .highlights,
 #volunteer .item > h5,
 #awards .awarder,
-#publications .website,
+#publications .url,
 #publications .publisher,
 #skills .item .level,
 #languages .item .fluency {
   font-size: 0.9em;
 }
 #work .summary,
+#work .description,
 #awards .summary,
 #volunteer .summary,
 #publications .summary {
@@ -185,8 +186,13 @@ a {
 #work .highlights li,
 #volunteer .highlights li {
   font-size: 0.9em;
-  width: 45%;
-  margin-right: 5%;
+
+  /* one column configration */
+  width: 100%;
+
+  /* two column configration */
+  /* width: 45%; */
+  /* margin-right: 5%; */
 }
 #skills .keywords {
   margin: 0;

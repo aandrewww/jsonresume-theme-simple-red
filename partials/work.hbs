@@ -5,9 +5,9 @@
     {{#each resume.work}}
     <div class="item">
       <div class="row">
-        {{#if company}}
+        {{#if name}}
         <div class="name">
-          {{company}}
+          {{name}}
         </div>
         {{/if}}
         <div class="date">
@@ -27,9 +27,9 @@
           {{/if}}
         </div>
       </div>
-      {{#if website}}
-      <div class="website">
-        <a href="{{website}}">{{website}}</a>
+      {{#if url}}
+      <div class="url">
+        <a href="{{url}}">{{url}}</a>
       </div>
       {{/if}}
       {{#if position}}
@@ -37,11 +37,14 @@
         {{position}}
       </div>
       {{/if}}
-      {{#if summary}}
+      {{#ifCond summary '||' description}}
       <div class="summary">
-        <p>{{summary}}</p>
+        <p>
+          {{description}}
+          {{summary}}
+        </p>
       </div>
-      {{/if}}
+      {{/ifCond}}
       {{#if highlights.length}}
       <h5>Responsibilities:</h5>
       <ul class="highlights">
